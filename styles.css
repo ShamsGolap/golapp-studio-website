@@ -220,27 +220,20 @@ svg { display: block; width: 100%; height: 100%; }
   border-bottom: 1px solid #d0cec7;
 }
 .next-index {
-  position: relative;
-  display: block;
+  display: grid;
+  place-items: center;
   width: 46px;
   height: 46px;
   border: 1px solid #c9c6bd;
   border-radius: 50%;
-  color: transparent;
-  font-size: 0;
+  color: #676d7f;
 }
-.next-index::before,
-.next-index::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  border-radius: 999px;
-  background: #676d7f;
-  transform: translate(-50%, -50%);
+.next-index svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+  overflow: visible;
 }
-.next-index::before { width: 12px; height: 1.5px; }
-.next-index::after { width: 1.5px; height: 12px; }
 .next-project > div { min-width: 0; }
 .next-project p { margin: 0; color: #6f7482; font-size: 13px; line-height: 1.55; }
 .next-project > p:last-child { max-width: 520px; justify-self: end; }
